@@ -414,27 +414,41 @@
             </p>
             <form class="modal-form">
                 <div class="form-wrapper">
-                    <label class="form-label" for="" name="">Name</label>
-                    <input class="form-input" type="text" id="">
+                    <label class="form-label" for="user-name">
+                        Name
+                    </label>
+                    <div class="form-position-wrapper">
+                        <input class="form-input" type="text" name="user_name" id="user-name" required pattern="[a-zA-zа-яА-яіІєЄїЇ'йЙґҐ]+">
+                        <svg class="form-field-icon" width="12" height="12">
+                            <use href="./images/icons.svg#icon-name"></use>
+                        </svg>
+                    </div>
                 </div>
                 <div class="form-wrapper">
-                    <label class="form-label" for="" name="">Phone</label>
-                    <input class="form-input" type="text" id="">
+                    <label class="form-label" for="user-phone">
+                        Phone
+                    </label>
+                    <input class="form-input" type="tel" name="user_phone_number" id="user-phone" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="xxx-xxx-xx-xx">
                 </div>
                 <div class="form-wrapper">
-                    <label class="form-label" for="" name="">Email</label>
-                    <input class="form-input" type="text" id="">
+                    <label class="form-label" for="user-email">
+                        Email
+                    </label>
+                    <input class="form-input" type="email" name="user_email" id="user-email" required>
                 </div>
                 <div class="form-wrapper">
-                    <label class="form-label" for="">Comment</label>
-                    <textarea class="form-message" name="" id="" placeholder="Enter text"></textarea>
+                    <label class="form-label" for="user-comment">
+                        Comment
+                    </label>
+                    <textarea class="form-message" name="user_comment" id="user-comment" placeholder="Enter text"></textarea>
                 </div>
                 <div class="form-checkbox-wrapper">
-                    <input class="form-checkbox" type="checkbox" name="" id="">
-                    <label class="checkbox-label" for="">
+                    <input class="form-checkbox" type="checkbox" name="user_policy" id="user-policy" required value="true">
+                    <label class="checkbox-label" for="user-policy">
                         I accept the terms and conditions of the <a href="" class="privacy-form-link"> Privacy Policy</a>
                     </label>
                 </div>
+                <button class="form-submit-btn order-cta" type="submit">Send</button>
             </form>
         </div>
     </div>
