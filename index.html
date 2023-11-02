@@ -428,13 +428,23 @@
                     <label class="form-label" for="user-phone">
                         Phone
                     </label>
-                    <input class="form-input" type="tel" name="user_phone_number" id="user-phone" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="xxx-xxx-xx-xx">
+                    <div class="form-position-wrapper">
+                        <input class="form-input" type="tel" name="user_phone_number" id="user-phone" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="xxx-xxx-xx-xx">
+                        <svg class="form-field-icon" width="12" height="12">
+                            <use href="./images/icons.svg#icon-phone"></use>
+                        </svg>
+                    </div>
                 </div>
                 <div class="form-wrapper">
                     <label class="form-label" for="user-email">
                         Email
                     </label>
-                    <input class="form-input" type="email" name="user_email" id="user-email" required>
+                    <div class="form-position-wrapper">
+                        <input class="form-input" type="email" name="user_email" id="user-email" required>
+                        <svg class="form-field-icon" width="12" height="12">
+                            <use href="./images/icons.svg#icon-mail"></use>
+                        </svg>
+                    </div>
                 </div>
                 <div class="form-wrapper">
                     <label class="form-label" for="user-comment">
