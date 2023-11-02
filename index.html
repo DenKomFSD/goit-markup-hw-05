@@ -52,7 +52,7 @@
         <!-- ADVANTAGES -->
         <section class="section">
             <div class="container">
-                <h2 class="visually-hidden">
+                <h2 class="title-no-visible visually-hidden">
                     Team
                 </h2>
                 <ul class="advantages">
@@ -391,7 +391,9 @@
             <div class="subscribtion">
                 <p class="footer-social-text">Subscribe</p>
                 <form class="footer-form">
-                    <input class="footer-input" type="email" name="subscribtion" placeholder="E-mail">
+                    <label  for="footer-input">
+                        <input class="footer-input-field" type="email" name="subscribtion" id="footer-input" placeholder="E-mail">
+                    </label>
                     <button class="sub-btn" type="submit">
                         Subscribe
                         <svg class="icon-sub" width="24" height="24">
@@ -402,7 +404,8 @@
             </div>
         </div>
     </footer>
-    <div class="form-bkdr is-open">
+    <!-- MODAL FORM -->
+    <div class="form-bkdr">
         <div class="modal">
             <button class="close-modal-btn" type="button" aria-label="modal close button">
                 <svg class="x-close" width="8" height="8">
@@ -446,15 +449,20 @@
                         </svg>
                     </div>
                 </div>
-                <div class="form-wrapper">
+                <div class="form-wrapper form-wrapper-mb">
                     <label class="form-label" for="user-comment">
                         Comment
                     </label>
                     <textarea class="form-message" name="user_comment" id="user-comment" placeholder="Enter text"></textarea>
                 </div>
                 <div class="form-checkbox-wrapper">
-                    <input class="form-checkbox" type="checkbox" name="user_policy" id="user-policy" required value="true">
+                    <input class="form-checkbox visually-hidden" type="checkbox" name="user_policy" id="user-policy" required value="true">
                     <label class="checkbox-label" for="user-policy">
+                        <span class="custom-field-checkbox">
+                            <svg class="checkmark-icon-md" width="10" height="8">
+                                <use href="./images/icons.svg#icon-checkmark"></use>
+                            </svg>
+                        </span>
                         I accept the terms and conditions of the <a href="" class="privacy-form-link"> Privacy Policy</a>
                     </label>
                 </div>
